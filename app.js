@@ -63,34 +63,7 @@ const galleryItems = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-/*Создание и рендер разметки по массиву данных galleryItems из app.js и предоставленному шаблону.
-Реализация делегирования на галерее ul.js-gallery и получение url большого изображения.
-Открытие модального окна по клику на элементе галереи.
-Подмена значения атрибута src элемента img.lightbox__image.
-Закрытие модального окна по клику на кнопку button[data-action="close-lightbox"].
-Очистка значения атрибута src элемента img.lightbox__image. Это необходимо для 
-того, чтобы при следующем открытии модального окна, пока грузится изображение, мы не видели предыдущее.*/
-// console.log(galleryItems);
-// const boxImageEl = document.querySelector('.js-gallery');
 
-// console.log(boxImageEl);
-
-// // const closeBtn = document.querySelector('[data-action="close-lightbox"]');
-// // const modalWindowEl = document.querySelector('.js-lightbox');
-
-// //  Добавили разметку
-// function createImageGallery(galleryItems) {
-//   return galleryItems
-//     .map(({ preview, original, description }) => {
-//       return `<li class = "gallery__item"><a class = "gallery__link" >
-//     <img class = "gallery__image" src = ${preview} data-source = ${preview} alt = ${description}/></a></li>`;
-//     })
-//     .join('');
-// }
-
-// // const modalWindowImgEl = document.querySelector('.lightbox__image');
-// const cardsGallery = createImageGallery(galleryItems);
-// boxImageEl.insertAdjacentHTML(`beforeend`, createImageGallery);
 const boxImageEl = document.querySelector('.js-gallery');
 const closeBtn = document.querySelector('[data-action="close-lightbox"]');
 const modalWindowEl = document.querySelector('.js-lightbox');
